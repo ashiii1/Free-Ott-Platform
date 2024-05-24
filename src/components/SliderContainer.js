@@ -22,6 +22,7 @@ const SliderContainer = ({movies}) => {
 }
 const SliderWrapper = styled.div`
 
+}
 `
 
 export default SliderContainer
