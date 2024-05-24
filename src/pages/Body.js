@@ -157,7 +157,7 @@ import TopNav from "../components/TopNav";
 import { fetchMovies, getGenres } from "../store";
 import SliderContainer from "../components/SliderContainer";
 
-const Netflix = () => {
+const Body = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -302,4 +302,4 @@ const HeroContainer = styled.div`
   // }
 `;
 
-export default Netflix;
+export default Body;
