@@ -1,31 +1,4 @@
-/*import React, { useState } from 'react';
-import styled from 'styled-components';
-import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
-import { firebaseAuth } from '../utils/firebase-config';
 
-import Header from '../componenets/Header';
-import BackgroundImage from '../componenets/BackgroundImage';
-import { useNavigate } from 'react-router-dom';
-
-const SignUpPage = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [formValues, setFormValues] = useState({ email: '', password: '' });
-
-  const navigate = useNavigate();
-
-  const handleSignIn = async () => {
-    try {
-      const { email, password } = formValues;
-      await createUserWithEmailAndPassword(firebaseAuth, email, password);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  onAuthStateChanged(firebaseAuth, (currentUser) => {
-    if (currentUser) navigate('/login');
-  });
-  */
   import React, { useState, useEffect } from 'react';
   import styled from 'styled-components';
   import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
